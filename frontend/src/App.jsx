@@ -7,4 +7,6 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
+// All the routing and everything is in separate routes.jsx files 
+
 export default App;

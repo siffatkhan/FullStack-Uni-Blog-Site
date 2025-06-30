@@ -81,7 +81,7 @@ const GPACalculator = () => {
             onClick={() => removeCourse(index)}
             className="bg-red-500 text-white px-2 py-1 rounded"
           >
-            Delete
+            X
           </button>
         </div>
       ))}
