@@ -1,0 +1,16 @@
+# Ignore node_modules folder
+node_modules
+
+# Ignore a specific file in public folder
+public/sifatPic.png
+
+# Ignore all .env files
+.env
+
+# Ignore all .log files
+*.log
+
+# Ignore build folder
+build/
+
+.DS_Store

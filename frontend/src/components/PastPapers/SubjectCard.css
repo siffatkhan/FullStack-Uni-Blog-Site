@@ -1,0 +1,61 @@
+/* SubjectCard.css */
+
+.card {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 20px;
+}
+
+.information {
+  padding: 1.5rem;
+}
+
+.information .tag {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+}
+
+.information .title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #222;
+}
+
+.information .info {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.information .button {
+  margin-top: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5em 1em;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.information .button:hover {
+  background-color: black;
+  color: white;
+}
