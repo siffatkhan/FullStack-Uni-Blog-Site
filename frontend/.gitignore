@@ -1,16 +1,48 @@
-# Ignore node_modules folder
-node_modules
+# macOS system files
+.DS_Store
+../.DS_Store
 
-# Ignore a specific file in public folder
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# React build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+debug.log
+
+# Coverage reports
+coverage/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional: OS-specific trash files
+Thumbs.db
+
+# Optional: Local images or secrets
 public/sifatPic.png
 
-# Ignore all .env files
-.env
+# Optional: next.js build
+.next/
 
-# Ignore all .log files
-*.log
-
-# Ignore build folder
-build/
-
-.DS_Store
+# Optional: Parcel cache
+.cache/
