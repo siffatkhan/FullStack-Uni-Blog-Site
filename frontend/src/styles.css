@@ -21,6 +21,10 @@
   border-collapse: collapse;
 }
 
+.highlight{
+  background-color: red;
+}
+
 /* .navBar .search {
   border: 1px solid black;
   padding: 10px;
