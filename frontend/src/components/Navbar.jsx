@@ -23,7 +23,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink className={(e)=>{return e.isActive? "highlight":""}} to="/gpa-calculator" >
-            GPA Calculator
+            GPA
           </NavLink>
         </li>
         <li>

@@ -7,7 +7,6 @@ import QuoteOfTheDay from "./QuoteOfTheDay";
 const HomePage = () => {
   return (
     <main>
-      <Header />
 
       <QuickLinks />
 
