@@ -58,6 +58,23 @@ const router=createBrowserRouter([
   //     { path: "contact", element: <ContactPage /> },
   //   ],
   // },
+
+
+
 ]);
 
 export default router;
+
+
+
+
+// First route (HomeLayout) has only an index route, meaning it is used only when URL is exactly /
+// Second route (MainLayout) has child paths like /about, /contact, /journals etc.
+
+// It checks the most specific match first.
+// If URL is /, it uses HomeLayout + HomePage.
+// If URL is /about, it looks for a child about under MainLayout.
+
+
+//   Same parent path (/) is fine because children define the actual routes rendered.
+// Index route (index: true) is for the default route of that layout.

@@ -17,3 +17,5 @@ function HomeLayout(){
 }
 export default HomeLayout;
 
+// Made This layout maybe later dsicard it
+

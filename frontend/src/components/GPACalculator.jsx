@@ -21,7 +21,7 @@ const GPACalculator = () => {
     newCourses.splice(index, 1);
     setCourses(newCourses);
   };
-
+// have to make changes in it css like it should disable the button when no input
   const calculateGPA = () => {
     let totalPoints = 0;
     let totalCredits = 0;
