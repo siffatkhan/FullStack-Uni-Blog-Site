@@ -1,11 +1,12 @@
-/* SubjectCard.css */
-
 .card {
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
   background-color: white;
   overflow: hidden;
+  padding: 20px;
+  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #848484;
 }
 
 .card:hover {
@@ -13,49 +14,28 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 20px;
 }
 
-.information {
-  padding: 1.5rem;
-}
-
-.information .tag {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  font-weight: 500;
-  font-size: 0.875rem;
-  padding: 0.4em 0.8em;
-  border-radius: 6px;
-}
-
-.information .title {
-  font-size: 1.3rem;
+.title {
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-top: 1rem;
-  color: #222;
+  /* margin-bottom: 15px; */
+  color: black;
+  font-family: 'Playfair Display', serif;
 }
 
-.information .info {
-  margin-top: 0.8rem;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.information .button {
-  margin-top: 1.2rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5em 1em;
-  border: 2px solid black;
+.button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin-top: 12px;
   border-radius: 6px;
   background-color: white;
   color: black;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
 }
 
-.information .button:hover {
+.button:hover {
   background-color: black;
   color: white;
 }

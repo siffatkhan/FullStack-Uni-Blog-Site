@@ -1,0 +1,86 @@
+/* html, body {
+  height: 100%;
+  margin: 0;
+} */
+
+/* #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+.footer {
+  background-color: #f6f7fa; /* light gray background */
+  color: #374151; /* dark gray text */
+  border-top: 1px solid #d1d5db; /* border top */
+  padding: 20px 0;
+  font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
+
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.footer-left {
+  margin-bottom: 10px;
+}
+
+.footer-links, .footer-policy {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a i {
+  font-size: 20px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.footer-links a i:hover {
+  color: gray;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #374151;
+}
+
+.footer-policy a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-policy a:hover {
+  color: gray;
+}
+
+@media(min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    
+  }
+
+  .footer-left, .footer-links, .footer-policy {
+    margin-bottom: 0;
+  }
+}

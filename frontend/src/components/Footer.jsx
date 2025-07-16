@@ -1,33 +1,31 @@
 import React from 'react';
+import './Footer.css'; // Importing the CSS file
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 mt-10 border-t">
-      <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+    <footer className="footer">
+      <div className="footer-container">
 
-        <div className="text-center md:text-left">
-          <p>© 2025 IMSpectrum | Built by Siffat</p>
+        <div className="footer-left">
+          <p>© 2025 IMSpectrum. Developed by Siffat Khan.</p>
         </div>
 
-        <div className="flex space-x-4 my-2 md:my-0">
-          <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer" className="hover:underline">
-            GitHub
+        <div className="footer-links">
+          <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:underline">
-            LinkedIn
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
           </a>
-          <a href="/contact" className="hover:underline">
-            Contact
+          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram"></i>
           </a>
+          {/* <a href="/contact">Contact</a> */}
         </div>
 
-        <div className="flex space-x-4 text-sm">
-          <a href="/privacy-policy" className="hover:underline">
-            Privacy Policy
-          </a>
-          <a href="/terms" className="hover:underline">
-            Terms of Service
-          </a>
+        <div className="footer-policy">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
         </div>
 
       </div>

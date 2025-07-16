@@ -8,7 +8,6 @@ import SubjectSearch from "./SubjectSearch";
 const SubjectList = () => {
 
   const [subjectInput,setSubjectInput]=useState("");
-  // const searchSubject=[];
 
   function handleChange(e){
     const value=e.target.value.toLowerCase();
@@ -16,19 +15,14 @@ const SubjectList = () => {
   }
 
   const filteredSubjects=subjects.filter((subject)=>
-    subject.title.toLowerCase().startsWith(subjectInput)
+    subject.title.toLowerCase().includes(subjectInput)
   );
-  // if(subjects.includes(subjectInput)){
-  //   searchSubject.push(subjectInput);
-  // }
-  // else{
-  //   console.log("not present")
-  // }
+
   
 
   return (
     <div className="parent-container">
-      <div>
+      <div >
         <SubjectSearch onChange={handleChange} input={subjectInput}/>
       </div>
       <div className="cards">
@@ -41,7 +35,7 @@ const SubjectList = () => {
           />
         )))
         : (
-        <p>No subject found by the name: {subjectInput}</p>)
+        <p className="NotFound">No subject found by the name: {subjectInput}</p>)
       }
       </div>
     </div>

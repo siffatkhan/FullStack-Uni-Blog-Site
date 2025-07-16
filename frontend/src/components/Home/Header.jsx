@@ -1,9 +1,14 @@
 import React from 'react'
+import "./FrontPage.css";
 
 const Header = () => {
   return (
     <div>
-      <h1>IMSpectrum</h1>
+      <div className="header-container">
+        <p className="header-paragraph">Plan. Build. Rise</p>
+        <h1 >IMSpectrum</h1>
+        
+      </div>
     </div>
   )
 }

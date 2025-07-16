@@ -1,0 +1,140 @@
+/* Navbar container */
+
+/* for normal link and paragraphs */
+/* Family name: Avenir LT W01
+PostScript name: AvenirLTW01-35Light
+Font origin: Network resource(
+
+for headings
+Family name: Playfair Display
+PostScript name: PlayfairDisplay-Bold
+ */
+.navbar {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  min-height: 50px; /* ensure consistent navbar height */
+  z-index: 10; /* keeps navbar above dropdown menu */
+  
+}
+
+/* Nav links styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-links li {
+  border-right: 1px solid black; /* only right border for each */
+  width: 140px;
+  text-align: center;
+}
+
+.nav-links li:last-child {
+  border-right: none; /* no right border on last item */
+}
+
+.nav-links li a {
+  display: block;
+  padding: 0 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none; 
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+  color: #6600EA;
+}
+
+/* Highlight active link */
+.highlight {
+  color: #6600EA;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%); /* vertically center hamburger */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start; /* align items to start so hamburger stays left, adjust as needed */
+    border-top: none ; 
+    margin-right: 32px;
+   
+  }
+
+  .hamburger {
+    display: block;
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fdfdfd; 
+    width: 100%;
+    padding: 0; 
+    position: absolute;
+    top: 100%; /* place dropdown below navbar */
+    left: 0;
+    text-align: center;
+    align-items: center;
+    user-select: none;
+    
+    /* height: 100%; */
+    
+
+  }
+
+  .nav-links li {
+    border: none; /* remove all borders in mobile dropdown for cleaner look */
+  }
+
+  .nav-links li a {
+    color: rgb(0, 0, 0); /* white text in dropdown */
+    padding: 10px 20px; /* comfortable touch area in dropdown */
+    line-height: normal; /* reset line height for dropdown links */
+  }
+
+  .nav-links li a:hover {
+    /* background-color: #6600EA; purple background on hover in dropdown */
+    color: #6600EA;
+  }
+
+  .nav-links.active {
+    display: flex;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 4px;
+  }
+}
