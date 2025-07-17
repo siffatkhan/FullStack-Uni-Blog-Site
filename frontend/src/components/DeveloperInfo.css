@@ -1,0 +1,136 @@
+.about-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+  color: #333;
+}
+
+/* .name{
+  color: #6600EA;
+} */
+.about-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+}
+
+.about-image-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 320px;
+  border-radius: 15px;
+  /* transform: rotate(-3deg); */
+  transform: rotate(-90deg);
+  filter: grayscale(100%);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.about-content {
+  flex: 2 1 500px;
+}
+
+.about-heading {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.hi-div,
+.connect-div {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+  letter-spacing: 8px;
+  font-weight: lighter;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  margin: 20px 0; /* spacing above and below */
+}
+
+.hi-div:hover,
+.connect-div:hover {
+  transform: scale(1.1);
+  letter-spacing: 12px;
+}
+
+/* Contact Form Styles */
+
+.contact-container {
+  max-width: 600px;
+  margin: 20px auto 40px auto;
+  padding: 30px 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+}
+
+.contact-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+}
+
+.contact-btn:hover {
+  background-color: #6600EA;
+  color: white;
+  border: 1px solid #6600EA;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 200px;
+    transform: rotate(-3deg);
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+}

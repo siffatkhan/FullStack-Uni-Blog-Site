@@ -9,6 +9,7 @@ for headings
 Family name: Playfair Display
 PostScript name: PlayfairDisplay-Bold
  */
+
 .navbar {
   background: #ffffff;
   color: rgb(0, 0, 0);
@@ -22,7 +23,9 @@ PostScript name: PlayfairDisplay-Bold
   min-height: 50px; /* ensure consistent navbar height */
   z-index: 10; /* keeps navbar above dropdown menu */
   
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); 
 }
+
 
 /* Nav links styling */
 .nav-links {
@@ -76,7 +79,17 @@ PostScript name: PlayfairDisplay-Bold
   position: absolute;
   right: 8px;
   top: 50%;
-  transform: translateY(-50%); /* vertically center hamburger */
+  transform: translateY(-50%);
+  color: black; /* default color */
+  transition: color 0.2s ease;
+}
+
+.hamburger:hover {
+  color: #6600EA; /* desired hover color */
+}
+
+.hamburger.open {
+  color: #6600EA; /* when menu is open, keep the hover color */
 }
 
 /* Mobile responsiveness */
@@ -84,8 +97,8 @@ PostScript name: PlayfairDisplay-Bold
   .navbar {
     justify-content: flex-start; /* align items to start so hamburger stays left, adjust as needed */
     border-top: none ; 
-    margin-right: 32px;
-   
+
+    margin-right: 30px;
   }
 
   .hamburger {
@@ -109,10 +122,6 @@ PostScript name: PlayfairDisplay-Bold
     text-align: center;
     align-items: center;
     user-select: none;
-    
-    /* height: 100%; */
-    
-
   }
 
   .nav-links li {
@@ -126,7 +135,6 @@ PostScript name: PlayfairDisplay-Bold
   }
 
   .nav-links li a:hover {
-    /* background-color: #6600EA; purple background on hover in dropdown */
     color: #6600EA;
   }
 

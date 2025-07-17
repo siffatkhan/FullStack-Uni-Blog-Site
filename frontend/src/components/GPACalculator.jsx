@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import "./GPACalculator.css";
 
 const GPACalculator = () => {
-  const [courses, setCourses] = useState([
-    { name: "", credits: "", gradePoint: "" },
-  ]);
+  const initialCourse = [{ name: "", credits: "", gradePoint: "" }];
+  const [courses, setCourses] = useState(initialCourse);
   const [gpa, setGpa] = useState(null);
 
   const handleChange = (index, field, value) => {
@@ -16,12 +16,17 @@ const GPACalculator = () => {
     setCourses([...courses, { name: "", credits: "", gradePoint: "" }]);
   };
 
-  const removeCourse = (index) => {
-    const newCourses = [...courses];
-    newCourses.splice(index, 1);
-    setCourses(newCourses);
+  // const removeCourse = (index) => {
+  //   const newCourses = [...courses];
+  //   newCourses.splice(index, 1);
+  //   setCourses(newCourses);
+  // };
+
+  const resetCourses = () => {
+    setCourses(initialCourse);
+    setGpa(null);
   };
-// have to make changes in it css like it should disable the button when no input
+
   const calculateGPA = () => {
     let totalPoints = 0;
     let totalCredits = 0;
@@ -38,37 +43,33 @@ const GPACalculator = () => {
     setGpa(calculatedGpa);
   };
 
+  const isCalculateDisabled = courses.some(
+    (course) =>
+      course.name.trim() === "" ||
+      course.credits === "" ||
+      course.gradePoint === ""
+  );
+
   return (
-    <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">GPA Calculator</h1>
+    <div className="gpa-container">
+      <h1 className="gpa-title">Calculate Your GPA</h1>
 
       {courses.map((course, index) => (
-        <div key={index} className="flex items-center gap-2 mb-2">
+        <div key={index} className="course-row">
           <input
             type="text"
             placeholder="Subject Name"
             value={course.name}
             onChange={(e) => handleChange(index, "name", e.target.value)}
-            className="border p-1"
+            className="course-input"
           />
-
-          <select
-            value={course.credits}
-            onChange={(e) => handleChange(index, "credits", e.target.value)}
-            className="border p-1"
-          >
-            <option value="">Credit Hrs</option>
-            <option value="3">3</option>
-            <option value="2">2</option>
-            <option value="1">1</option>
-          </select>
 
           <select
             value={course.gradePoint}
             onChange={(e) => handleChange(index, "gradePoint", e.target.value)}
-            className="border p-1"
+            className="course-select"
           >
-            <option value="">GPA Obtained</option>
+            <option value="">GPA</option>
             <option value="4.0">4.0</option>
             <option value="3.5">3.5</option>
             <option value="3.0">3.0</option>
@@ -77,82 +78,69 @@ const GPACalculator = () => {
             <option value="0.0">0.0</option>
           </select>
 
-          <button
-            onClick={() => removeCourse(index)}
-            className="bg-red-500 text-white px-2 py-1 rounded"
+          <select
+            value={course.credits}
+            onChange={(e) => handleChange(index, "credits", e.target.value)}
+            className="course-select"
           >
-            X
-          </button>
+            <option value="">Credits</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+          </select>
+
+          
+
+          {/* {courses.length > 1 && index !== 0 && (
+            <button onClick={() => removeCourse(index)} className="remove-btn">
+              X
+            </button>
+          )} */}
         </div>
       ))}
 
-      <div className="mt-4">
-        <button
-          onClick={addCourse}
-          className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
-        >
+      <div className="buttons">
+        <button onClick={addCourse} className="add-btn">
           Add Course
+        </button>
+         <button onClick={resetCourses} className="reset-btn">
+          Reset
         </button>
         <button
           onClick={calculateGPA}
-          className="bg-green-500 text-white px-4 py-2 rounded"
+          className="calc-btn"
+          disabled={isCalculateDisabled}
         >
           Calculate GPA
         </button>
+       
       </div>
 
       {gpa !== null && (
-        <div className="mt-4">
-          <h2 className="text-lg font-semibold">Your GPA is: {gpa}</h2>
+        <div className="gpa-result">
+          <p>Congrats  🥂🎉🥳</p>
+          <h2>Your GPA is: {gpa}</h2>
         </div>
       )}
 
-      <div className="mt-6">
-        <h3 className="font-bold mb-2">IMS Grading Scale</h3>
-        <table className="border border-collapse">
+      <div className="grading-scale">
+        <h3>IMS Grading Scale</h3>
+        <table className="grading-table">
           <thead>
             <tr>
-              <th className="border px-2 py-1">Marks (%)</th>
-              <th className="border px-2 py-1">Grade Points</th>
-              <th className="border px-2 py-1">Grade</th>
+              <th>Marks (%)</th>
+              <th>Grade Points</th>
+              <th>Grade</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="border px-2 py-1">91-100</td>
-              <td className="border px-2 py-1">4.0</td>
-              <td className="border px-2 py-1">A+</td>
-            </tr>
-            <tr>
-              <td className="border px-2 py-1">87-90</td>
-              <td className="border px-2 py-1">4.0</td>
-              <td className="border px-2 py-1">A</td>
-            </tr>
-            <tr>
-              <td className="border px-2 py-1">80-86</td>
-              <td className="border px-2 py-1">3.5</td>
-              <td className="border px-2 py-1">B+</td>
-            </tr>
-            <tr>
-              <td className="border px-2 py-1">72-79</td>
-              <td className="border px-2 py-1">3.0</td>
-              <td className="border px-2 py-1">B</td>
-            </tr>
-            <tr>
-              <td className="border px-2 py-1">66-71</td>
-              <td className="border px-2 py-1">2.5</td>
-              <td className="border px-2 py-1">C+</td>
-            </tr>
-            <tr>
-              <td className="border px-2 py-1">60-65</td>
-              <td className="border px-2 py-1">2.0</td>
-              <td className="border px-2 py-1">C</td>
-            </tr>
-            <tr>
-              <td className="border px-2 py-1">Below 60</td>
-              <td className="border px-2 py-1">0.0</td>
-              <td className="border px-2 py-1">F</td>
-            </tr>
+            <tr><td>91-100</td><td>4.0</td><td>A+</td></tr>
+            <tr><td>87-90</td><td>4.0</td><td>A</td></tr>
+            <tr><td>80-86</td><td>3.5</td><td>B+</td></tr>
+            <tr><td>72-79</td><td>3.0</td><td>B</td></tr>
+            <tr><td>66-71</td><td>2.5</td><td>C+</td></tr>
+            <tr><td>60-65</td><td>2.0</td><td>C</td></tr>
+            <tr><td>Below 60</td><td>0.0</td><td>F</td></tr>
           </tbody>
         </table>
       </div>

@@ -68,7 +68,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className={`hamburger ${isOpen ? "open" : ""}`}
+       onClick={toggleMenu}>
         {isOpen ? "×" : "☰"}
       </div>
 

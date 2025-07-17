@@ -49,11 +49,12 @@
 .footer-links a i {
   font-size: 20px;
   color: black;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .footer-links a i:hover {
-  color: gray;
+  /* color: gray; */
+  color: #6600EA;
 }
 
 .footer-links a {
@@ -69,7 +70,8 @@
 }
 
 .footer-policy a:hover {
-  color: gray;
+  /* color: gray; */
+  color: #6600EA;
 }
 
 @media(min-width: 768px) {
