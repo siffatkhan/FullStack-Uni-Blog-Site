@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <main>
 
-      <QuickLinks />
+      {/* <QuickLinks /> */}
 
       <FeaturedBlog />
 

@@ -31,7 +31,7 @@ const DeveloperInfo = () => {
           </p>
 
           <p className="about-text">
-            Outside of coding, you’ll find me working out at the gym, analyzing trading charts, or riding horses whenever I find one.
+            Outside of coding, you’ll find me working out at the gym, doing chart analysis, or riding horses whenever I find one.
           </p>
         </div>
       </div>

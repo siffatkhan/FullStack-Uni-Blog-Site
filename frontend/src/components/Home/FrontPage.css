@@ -11,6 +11,7 @@
     margin-bottom: 20px;
     display: inline-block;
     transition: transform 0.8s ease;
+    
 }
 
 .header-container h1:hover{
@@ -23,4 +24,25 @@
     word-spacing: 4px;
     margin-bottom: 8px;
     font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
+}
+
+.blogPic{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 450px;
+    /* margin-bottom: 0; */
+}
+
+.blogMetaData{
+    font-family: 'AvenirLTW01-35Light','Avenir', sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    padding: 0;
+    /* margin-top: 20px; */
+    margin: 0;
+    border: 1px solid red;
+    display: inline-block;
+    color: #333;
+    /* margin: 0; */
 }

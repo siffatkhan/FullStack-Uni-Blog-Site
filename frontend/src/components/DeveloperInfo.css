@@ -59,7 +59,7 @@
   margin: 20px 0; /* spacing above and below */
 }
 
-.hi-div:hover,
+
 .connect-div:hover {
   transform: scale(1.1);
   letter-spacing: 12px;
