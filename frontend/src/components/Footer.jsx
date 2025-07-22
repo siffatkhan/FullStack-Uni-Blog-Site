@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css'; // Importing the CSS file
+// there is still footter probelm persists
+
 
 const Footer = () => {
   return (
