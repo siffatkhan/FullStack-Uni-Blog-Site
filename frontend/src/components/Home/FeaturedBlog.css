@@ -5,38 +5,48 @@
   max-width: 800px;
   margin: 40px auto;
   padding: 16px;
-  font-family: 'Avenir', sans-serif;
+  border: 1px solid black;
+  /* font-family: 'Avenir', sans-serif; */
 }
 
 /* Label for Featured Post */
 .featuredLabel {
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
   font-size: 14px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 12px;
   letter-spacing: 2px;
-  color: #888;
+  color: #000000;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 /* Blog Card layout: image + content side by side on desktop */
 .blogCard {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   border: 1px solid #eee;
-  border-radius: 8px;
-  overflow: hidden;
+  /* border-radius: 8px; */
+  /* overflow: hidden;  */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
+  border: 1px solid black;
 }
 
 .blogCard:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 /* Image styling */
 .blogPic {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  border: 1px solid black;
+  /* max-width: 100%;
+  height: auto; */
+  /* object-fit: cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Content container */
