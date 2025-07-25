@@ -151,6 +151,10 @@
     font-size: 12px;
   }
 
+/* .course-select option {
+  font-size: 13px; 
+} */
+
   .buttons {
     flex-direction: row;
     align-items: center;

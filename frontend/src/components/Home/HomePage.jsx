@@ -12,7 +12,7 @@ const HomePage = () => {
 
       <FeaturedBlog />
 
-      <QuoteOfTheDay />
+      {/* <QuoteOfTheDay /> */}
     </main>
   );
 };

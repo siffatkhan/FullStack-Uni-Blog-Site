@@ -1,4 +1,10 @@
 /* FeaturedBlog.css */
+
+
+body {
+  overflow-x: hidden;
+}
+
 .featuredBlogContainer {
   max-width: 920px;
   margin: 64px auto;
@@ -43,6 +49,7 @@
 .blogContent {
   padding: 16px;
   margin-left: 20px;
+  overflow: hidden;
 }
 
 
@@ -111,6 +118,37 @@
     padding: 24px;
   }
 }
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .featuredLabel {
+    font-size: 18px;
+    width: 320px;
+    letter-spacing: 8px;
+    padding: 14px;
+  }
+}
+
+/* Mobile large screens */
+@media (max-width: 768px) {
+  .featuredLabel {
+    font-size: 16px;
+    width: 240px;
+    letter-spacing: 6px;
+    padding: 12px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .featuredLabel {
+    font-size: 14px;
+    width: 180px;
+    letter-spacing: 4px;
+    padding: 10px;
+  }
+}
+
 
 
 

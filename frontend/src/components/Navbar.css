@@ -43,9 +43,13 @@ PostScript name: PlayfairDisplay-Bold
   text-align: center;
 }
 
-.nav-links li:last-child {
-  border-right: none; /* no right border on last item */
+.nav-links li:first-child{
+  border-left: 1px solid black;
 }
+.nav-links li:last-child {
+  border-right: 1px solid black; /* no right border on last item */
+}
+
 
 .nav-links li a {
   display: block;
@@ -98,7 +102,7 @@ PostScript name: PlayfairDisplay-Bold
     justify-content: flex-start; /* align items to start so hamburger stays left, adjust as needed */
     border-top: none ; 
 
-    margin-right: 30px;
+    /* margin-right: 30px; */
   }
 
   .hamburger {
@@ -124,7 +128,9 @@ PostScript name: PlayfairDisplay-Bold
     user-select: none;
   }
 
-  .nav-links li {
+  .nav-links li,
+  .nav-links li:first-child,
+  .nav-links li:last-child {
     border: none; /* remove all borders in mobile dropdown for cleaner look */
   }
 

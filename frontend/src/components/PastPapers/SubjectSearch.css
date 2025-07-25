@@ -9,7 +9,7 @@
   margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
   display: inline-block; /* important for transform effect */
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
 }
 
 .search-container h1:hover {
