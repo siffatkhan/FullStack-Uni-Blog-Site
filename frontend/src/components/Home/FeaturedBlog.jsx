@@ -1,8 +1,10 @@
 import React from 'react'
 import "./FeaturedBlog.css"
 import { Link } from "react-router-dom"
+import blogs from '../../data/blogs'
 
 const FeaturedBlog = () => {
+  const firstBlog=blogs[0];
   return (
     <div className="featuredBlogContainer">
       <p className="featuredLabel">FEATURED POST</p>
@@ -12,15 +14,16 @@ const FeaturedBlog = () => {
         
         <div className="blogContent">
           <div className="blogMeta">
-            <p className="blogAuthor">Admin</p>
-            <p className="blogDate">July 20, 2025 <span className="dot">•</span> 1 min read</p>
+            <p className="blogAuthor">{firstBlog.author}</p>
+            <p className="blogDate">{firstBlog.date} <span className="dot">•</span> {firstBlog.readTime}</p>
           </div>
 
           <div className="content">
-          <Link to="/" className="blogLink">
-            <h1 className="blogTitle">Why I made this</h1>
+            {/* check the bellow link endpoint and slug whether it doing that same purpose of going to that exact endpoint */}
+          <Link to={`/journals/${firstBlog.slug}`} className="blogLink">
+            <h1 className="blogTitle">{firstBlog.title}</h1>
             <p className="blogExcerpt">
-              The sole purpose of this website, uploading blogs, past papers, and everything was...
+              {firstBlog.excerpt}
             </p>
           </Link>
           </div>

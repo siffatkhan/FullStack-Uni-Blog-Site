@@ -1,10 +1,22 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import blogs from "../../data/blogs";
 
 const JournalDetail = () => {
+  const { slug } = useParams();
+
+  const blog = blogs.find((b) => b.slug === slug);
+
+  if (!blog) return <p>Blog not found</p>; // avoid errors on invalid slugs
+
   return (
     <div>
-      <h1>Journal Detail</h1>
-      <p>Full journal content here...</p>
+      <h1>{blog.title}</h1>
+      <p>By {blog.author} on {blog.date} — {blog.readTime}</p>
+      <img src={blog.coverImage} alt="Cover" />
+      <p>{blog.excerpt}</p>
+      <div>{blog.content}</div>
+      {/* <p>Tags: {blog.tags.join(', ')}</p>s */}
     </div>
   );
 };
