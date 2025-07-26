@@ -10,8 +10,9 @@ yarn-error.log*
 package-lock.json
 pnpm-lock.yaml
 
-#Data
-./src/data
+# Ignore specific files
+/src/data/blogs.js
+/src/data/subjects.js
 
 # React build output
 build/
