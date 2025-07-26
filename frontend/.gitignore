@@ -11,8 +11,8 @@ package-lock.json
 pnpm-lock.yaml
 
 # Ignore specific files
-/src/data/blogs.js
-/src/data/subjects.js
+./src/data/blogs.js
+./src/data/subjects.js
 
 # React build output
 build/
