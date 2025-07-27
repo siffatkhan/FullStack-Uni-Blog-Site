@@ -11,6 +11,7 @@ const JournalDetail = () => {
 
   return (
     <div>
+      <h1>{slug}</h1>
       <h1>{blog.title}</h1>
       <p>By {blog.author} on {blog.date} — {blog.readTime}</p>
       <img src={blog.coverImage} alt="Cover" />

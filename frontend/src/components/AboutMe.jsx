@@ -23,7 +23,7 @@ const DeveloperInfo = () => {
           </h1>
 
           <p className="about-text">
-            I’m exploring diverse areas of computer science including web development, data structures, and backend engineering. My focus is on building impactful fullstack applications with React, Next and Node.js.
+            I’m exploring diverse areas of computer science including web development, data structures, and backend engineering. My focus is on building impactful fullstack applications with React, Next and Flask/Django.
           </p>
 
           <p className="about-text">

@@ -1,0 +1,52 @@
+.journalCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 20px;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+}
+
+.journalCard {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.journalCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardCover {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.cardMeta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.cardExcerpt {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0077cc;
+}

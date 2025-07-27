@@ -1,9 +1,11 @@
 import React from "react";
+import JournalCard from "./JournalCard";
+
 const JournalList = () => {
   return (
     <div>
-      <h1>All Journals</h1>
-      <p>List of all journal cards here...</p>
+      {/* <p>List of all journal cards here...</p> */}
+      <JournalCard/>
     </div>
   );
 };
