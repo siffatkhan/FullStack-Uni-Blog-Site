@@ -17,12 +17,15 @@ const JournalCard = () => {
           />
 
           <div className="cardContent">
-            <h2 className="cardTitle">{blog.title}</h2>
+            
 
             <p className="cardMeta">
-              {blog.author} • {blog.semester} Sem, {blog.department}, {blog.batch}<br />
+              {/* {blog.author} • {blog.semester} Sem, {blog.department}, {blog.batch}<br /> */}
+              {blog.author}s<br />
               {blog.date} • {blog.readTime}
             </p>
+
+            <h2 className="cardTitle">{blog.title}</h2>
 
             <p className="cardExcerpt">
               {blog.excerpt.length > 120
