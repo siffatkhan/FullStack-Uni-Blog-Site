@@ -1,14 +1,16 @@
 .journalCardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 1.5rem;
   padding: 20px;
   font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+  margin: 20px;
 }
 
 .journalCard {
-  border: 1px solid #ddd;
-  border-radius: 12px;
+  border: 1px solid black;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 12px; */
   overflow: hidden;
   background-color: #fff;
   transition: transform 0.2s ease;
@@ -28,15 +30,8 @@
   padding: 16px;
 }
 
-.{
-  /* here i am gonna wite code for that readmore and excerpt */
-}
 
-.cardTitle {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  font-family: 'Playfair Display', serif;
-}
+
 
 .cardMeta {
   font-size: 0.85rem;
@@ -49,8 +44,20 @@
   margin-bottom: 1rem;
 }
 
-.readMore {
+.readMore h2{
   font-weight: bold;
-  text-decoration: underline;
-  color: #0077cc;
+  /* text-decoration: none; */
+  color: #000000;
+}
+
+.readMore:hover{
+  color: antiquewhite;
+}
+
+.cardTitle{
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: black;
 }

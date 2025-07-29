@@ -11,7 +11,7 @@ const JournalCard = () => {
             return (
           <div className="journalCard" key={index}>
           <img
-            src={blog.coverImage || './defaultCover.png'}
+            src='./defaultCover.jpg'
             alt="Cover"
             className="cardCover"
           />
@@ -21,10 +21,11 @@ const JournalCard = () => {
 
             <p className="cardMeta">
               {/* {blog.author} • {blog.semester} Sem, {blog.department}, {blog.batch}<br /> */}
-              {blog.author}s<br />
+              {/* {blog.author}s<br /> */}
               {blog.date} • {blog.readTime}
             </p>
 
+            <Link to={`/journals/${blog.slug}`} className="readMore">
             <h2 className="cardTitle">{blog.title}</h2>
 
             <p className="cardExcerpt">
@@ -32,11 +33,12 @@ const JournalCard = () => {
                 ? blog.excerpt.slice(0, 120) + '...'
                 : blog.excerpt}
             </p>
+             </Link>
 
-            <Link to={`/journals/${blog.slug}`} className="readMore">
-             <button>Read More</button>
-            </Link>
-            <p>{blog.likes}</p>
+                <div>
+          <p>{blog.author}</p>
+          <p>{blog.likes}</p>
+          </div>
           </div>
         </div>
             )
