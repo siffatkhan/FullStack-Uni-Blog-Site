@@ -1,28 +1,53 @@
+.wrapper{
+  max-width: 1000px;
+  margin: 56px auto;
+  padding: 12px;
+  /* border: 1px solid red; */
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
+}
+
+.navLinks{
+  display: flex;
+  justify-content: flex-start;
+}
+.navLinks a{
+  margin: 40px 20px;
+  text-decoration: none;
+  color: #4f4f4f;
+  font-weight: lighter;
+  font-size:  1rem;
+}
+.navLinks a:hover{
+  color:#6600EA ;
+}
+
 .journalCardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 1.5rem;
-  padding: 20px;
-  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
-  margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 3.5rem;
+  row-gap: 2rem;
+  padding: 10px 0;
+  /* font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif; */
+  margin: 24px 20px;
+  justify-content: center;
+  /* border: 1px solid black; */
+  /* place-items: center; */
 }
 
 .journalCard {
   border: 1px solid black;
-  /* border: 1px solid #ddd; */
-  /* border-radius: 12px; */
   overflow: hidden;
   background-color: #fff;
   transition: transform 0.2s ease;
 }
 
 .journalCard:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .cardCover {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -30,13 +55,17 @@
   padding: 16px;
 }
 
-
-
-
 .cardMeta {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: #666;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem; 
+}
+
+.dot-separator {
+  font-size: 0.6rem;
+  color: #aaa;         /* lighter gray */
+  margin: 0 7px;
+  vertical-align: middle;
 }
 
 .cardExcerpt {
@@ -51,7 +80,7 @@
 }
 
 .readMore:hover{
-  color: antiquewhite;
+  color: #6600EA;
 }
 
 .cardTitle{

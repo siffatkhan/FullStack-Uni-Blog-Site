@@ -12,8 +12,8 @@ pnpm-lock.yaml
 
 # Ignore specific files
 # /src/data/*
-/src/data/blogs.js
-/src/data/subjects.js
+/src/data/*
+# /src/data/subjects.js
 
 # React build output
 build/
@@ -44,7 +44,7 @@ coverage/
 Thumbs.db
 
 # Optional: Local images or secrets
-public/sifatPic.png
+public/*
 
 # Optional: next.js build
 .next/
