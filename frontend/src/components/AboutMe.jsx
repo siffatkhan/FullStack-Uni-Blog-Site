@@ -11,7 +11,7 @@ const DeveloperInfo = () => {
       <div className="about-card">
         <div className="about-image-container">
           <img
-            src="./2ndpic.jpeg"
+            src="/2ndpic.jpeg"
             alt="Siffat Ullah"
             className="about-image"
           />

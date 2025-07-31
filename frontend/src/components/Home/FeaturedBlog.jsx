@@ -10,7 +10,7 @@ const FeaturedBlog = () => {
       <p className="featuredLabel">FEATURED POST</p>
        
       <div className="blogCard">
-        <img src="./featured.jpg" alt="About Blog Pic" className="blogPic" />
+        <img src="/featured.jpg" alt="About Blog Pic" className="blogPic" />
         
         <div className="blogContent">
           <div className="blogMeta">
