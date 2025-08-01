@@ -15,6 +15,17 @@ const DeveloperInfo = () => {
             alt="Siffat Ullah"
             className="about-image"
           />
+          <div className="footer-links">
+            <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/siffat-ullah" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/sifat_kk9" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram"></i>
+          </a>
+          </div>
         </div>
 
         <div className="about-content">

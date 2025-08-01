@@ -17,15 +17,24 @@
   flex: 1 1 360px;
   display: flex;
   justify-content: center;
+  border: 1px solid red;
+  /* padding:20px; */
+
+  /* ADDED ALONG WITH THAT FOOTER LINKS LOGOS CODE SO CHECK IT ALSO  */
+  gap: 40px;
+  align-items:end;
+  
+
 }
 
 .about-image {
-  width: 340px;
+  width: 320px;
+  /* overflow: hidden; */
   border-radius: 12px;
-  /* transform: rotate(-3deg); */
   transform: rotate(-90deg);
   filter: grayscale(100%);
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  
 }
 
 .about-content {
@@ -111,8 +120,34 @@
   border: 1px solid #6600EA;
 }
 
+/* work on this code for those link logos  */
 
+/* .footer-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer-links a i {
+  font-size: 20px;
+  color: black;
+  transition: color 0.2s ease;
+  
+}
+
+.footer-links a i:hover {
+  color: #6600EA;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #374151;
+} */
 
 
 
