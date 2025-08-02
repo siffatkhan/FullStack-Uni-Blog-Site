@@ -9,13 +9,13 @@ const DeveloperInfo = () => {
 </div>
 
       <div className="about-card">
-        <div className="about-image-container">
+        {/* <div className="about-image-container">
           <img
             src="/2ndpic.jpeg"
             alt="Siffat Ullah"
             className="about-image"
           />
-          <div className="footer-links">
+          <div className="footerLinks">
             <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
@@ -26,7 +26,29 @@ const DeveloperInfo = () => {
             <i className="fab fa-instagram"></i>
           </a>
           </div>
-        </div>
+        </div> */}
+
+        <div className="about-image-container">
+  <div className="image-wrapper">
+    <img
+      src="/2ndpic.jpeg"
+      alt="Siffat Ullah"
+      className="about-image"
+    />
+  </div>
+  <div className="footerLinks">
+    <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/siffat-ullah" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-linkedin"></i>
+    </a>
+    <a href="https://instagram.com/sifat_kk9" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
 
         <div className="about-content">
           <h1 className="about-heading">
