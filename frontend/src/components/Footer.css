@@ -38,6 +38,18 @@
   margin-bottom: 10px;
 }
 
+.about-link {
+  text-decoration: none;
+  color: inherit;
+  /* font-weight: 500; */
+  transition: color 0.2s ease;
+}
+
+.about-link:hover {
+  color: #6600EA;
+  /* text-decoration: underline; */
+}
+
 .footer-links, .footer-policy {
   display: flex;
   gap: 15px;

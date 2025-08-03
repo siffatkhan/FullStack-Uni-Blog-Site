@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Footer.css'; // Importing the CSS file
 // there is still footter probelm persists
 
@@ -9,17 +11,22 @@ const Footer = () => {
       <div className="footer-container">
 
         <div className="footer-left">
-          <p>© 2025 IMSpectrum. Developed by Siffat Khan.</p>
+          <p>
+  © 2025 IMSpectrum.{' '}
+  <Link to="/about" className="about-link">
+    Developed by Siffat Khan.
+  </Link>
+</p>
         </div>
 
         <div className="footer-links">
           <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/siffat-khan" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/sifat_kk9" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
           {/* <a href="/contact">Contact</a> */}

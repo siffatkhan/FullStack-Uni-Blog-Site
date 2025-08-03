@@ -3,19 +3,22 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Header from "./Home/Header"
 import { Outlet } from "react-router-dom";
-
+import "./Layout.css"
 
 function HomeLayout(){
   return (
-    <>
-      <Header/>
-      <Navbar />
-      <Outlet />
-      <Footer/>
-    </>
+ 
+   <div className="page-wrapper">
+        <main className="page-content">
+          <Header/>
+          <Navbar />
+          <Outlet />
+          </main>
+          <Footer />
+        </div>
   );
 }
 export default HomeLayout;
 
-// Made This layout maybe later dsicard it
+
 
