@@ -1,15 +1,3 @@
-/* Navbar container */
-
-/* for normal link and paragraphs */
-/* Family name: Avenir LT W01
-PostScript name: AvenirLTW01-35Light
-Font origin: Network resource(
-
-for headings
-Family name: Playfair Display
-PostScript name: PlayfairDisplay-Bold
- */
-
 .navbar {
   background: #ffffff;
   color: rgb(0, 0, 0);
@@ -20,14 +8,12 @@ PostScript name: PlayfairDisplay-Bold
   position: relative;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  min-height: 50px; /* ensure consistent navbar height */
+  min-height: 50px; 
   z-index: 10; /* keeps navbar above dropdown menu */
   
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); 
 }
 
-
-/* Nav links styling */
 .nav-links {
   list-style: none;
   display: flex;
@@ -38,7 +24,7 @@ PostScript name: PlayfairDisplay-Bold
 }
 
 .nav-links li {
-  border-right: 1px solid black; /* only right border for each */
+  border-right: 1px solid black;
   width: 140px;
   text-align: center;
 }
@@ -47,9 +33,8 @@ PostScript name: PlayfairDisplay-Bold
   border-left: 1px solid black;
 }
 .nav-links li:last-child {
-  border-right: 1px solid black; /* no right border on last item */
+  border-right: 1px solid black; 
 }
-
 
 .nav-links li a {
   display: block;
@@ -65,17 +50,14 @@ PostScript name: PlayfairDisplay-Bold
   -ms-user-select: none; 
 }
 
-/* Hover effect for links */
 .nav-links li a:hover {
   color: #6600EA;
 }
 
-/* Highlight active link */
 .highlight {
   color: #6600EA;
 }
 
-/* Hamburger icon */
 .hamburger {
   display: none;
   font-size: 22px;
@@ -84,25 +66,23 @@ PostScript name: PlayfairDisplay-Bold
   right: 8px;
   top: 50%;
   transform: translateY(-50%);
-  color: black; /* default color */
+  color: black; 
   transition: color 0.2s ease;
 }
 
 .hamburger:hover {
-  color: #6600EA; /* desired hover color */
+  color: #6600EA; 
 }
 
 .hamburger.open {
-  color: #6600EA; /* when menu is open, keep the hover color */
+  color: #6600EA; 
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
   .navbar {
-    justify-content: flex-start; /* align items to start so hamburger stays left, adjust as needed */
+    justify-content: flex-start; 
     border-top: none ; 
-
-    /* margin-right: 30px; */
   }
 
   .hamburger {
@@ -121,7 +101,7 @@ PostScript name: PlayfairDisplay-Bold
     width: 100%;
     padding: 0; 
     position: absolute;
-    top: 100%; /* place dropdown below navbar */
+    top: 100%; 
     left: 0;
     text-align: center;
     align-items: center;
@@ -131,13 +111,13 @@ PostScript name: PlayfairDisplay-Bold
   .nav-links li,
   .nav-links li:first-child,
   .nav-links li:last-child {
-    border: none; /* remove all borders in mobile dropdown for cleaner look */
+    border: none; 
   }
 
   .nav-links li a {
-    color: rgb(0, 0, 0); /* white text in dropdown */
-    padding: 10px 20px; /* comfortable touch area in dropdown */
-    line-height: normal; /* reset line height for dropdown links */
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px; 
+    line-height: normal; 
   }
 
   .nav-links li a:hover {
