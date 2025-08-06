@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import blogs from "../../data/blogs";
 
 const JournalDetail = () => {
+
   const { slug } = useParams();
 
   const blog = blogs.find((b) => b.slug === slug);
@@ -11,12 +12,14 @@ const JournalDetail = () => {
 
   return (
     <div>
-      <h1>{slug}</h1>
+      {/* <h1>{slug}</h1> */}
       <h1>{blog.title}</h1>
-      <p>By {blog.author} on {blog.date} — {blog.readTime}</p>
+      
       <img src={blog.coverImage} alt="Cover" />
       <p>{blog.excerpt}</p>
       <div>{blog.content}</div>
+      <p>By {blog.author} on {blog.date} — {blog.readTime}</p>
+      <button>Like</button>
       {/* <p>Tags: {blog.tags.join(', ')}</p>s */}
     </div>
   );

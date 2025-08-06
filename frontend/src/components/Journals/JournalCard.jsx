@@ -1,19 +1,21 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import blogs from '../../data/blogs';
 import { NavLink } from "react-router-dom";
-import './JournalCard.css'; // optional for styling
+import './JournalCard.css'; 
 
 const JournalCard = () => {
+  const [allTags, setAllTags] = useState([]);
+  useEffect(()=>{
+    // it gonna havce logic for tags filtering
+  },[])
   return (
     <div className="wrapper">
       
       <div className="navLinks">
-        <nav>
-        <a href="">All</a>
-        <a href="">Fashion</a>
-        <a href="">Tech</a>
-        </nav>
-
+        <button>All</button>
+        <button>Tech</button>
+        <button>Career</button>
+        <button>Productivity</button>
       </div>
     <div className="journalCardGrid"> {/* Flex or grid container */}
       {blogs.map((blog, index) =>{

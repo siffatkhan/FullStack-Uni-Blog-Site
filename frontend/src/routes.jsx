@@ -13,7 +13,7 @@ import JournalCreatePage from "./components/Journals/JournalCreate";
 import LoginPage from "./components/Account/Login";
 import SignupPage from "./components/Account/Signup";
 import AboutPage from "./components/AboutMe";
-import ContactPage from "./components/Contact";
+// import ContactPage from "./components/Contact";
 import HomeLayout from "./components/HomeLayout";
 import MainLayout from "./components/MainLayout";
 
@@ -35,12 +35,12 @@ const router=createBrowserRouter([
       { path: "past-papers", element: <PastPapersPage /> },
       { path: "past-papers/:subjectIdSlug", element: <PastPaperDetailPage /> },
       { path: "journals", element: <JournalsPage /> },
-      { path: "journals/:id", element: <JournalDetailPage /> },
+      { path: "journals/:slug", element: <JournalDetailPage /> },
       { path: "journals/create", element: <JournalCreatePage /> },
       { path: "login", element: <LoginPage /> },
       { path: "signup", element: <SignupPage /> },
       { path: "about", element: <AboutPage /> },
-      { path: "contact", element: <ContactPage /> },
+      // { path: "contact", element: <ContactPage /> },
     ],
   },
 

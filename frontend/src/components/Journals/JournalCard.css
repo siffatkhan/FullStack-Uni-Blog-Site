@@ -1,6 +1,6 @@
 .wrapper{
   max-width: 1000px;
-  margin: 56px auto;
+  margin: 52px auto;
   padding: 12px;
   /* border: 1px solid red; */
   font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
@@ -10,15 +10,19 @@
   display: flex;
   justify-content: flex-start;
 }
-.navLinks a{
-  margin: 40px 20px;
+.navLinks button{
+  margin: 36px 12px;
   text-decoration: none;
   color: #4f4f4f;
   font-weight: lighter;
   font-size:  1rem;
+  background: transparent;
+  border: none;
+  font-family: 'AvenirLTW01-35Light', 'Avenir', sans-serif;
 }
-.navLinks a:hover{
+.navLinks button:hover{
   color:#6600EA ;
+  cursor: pointer;
 }
 
 .journalCardGrid {
