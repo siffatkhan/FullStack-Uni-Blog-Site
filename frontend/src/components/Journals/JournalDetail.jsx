@@ -1,9 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
 import { useParams } from "react-router-dom";
 import blogs from "../../data/blogs";
 
 const JournalDetail = () => {
 
+  const [likeCount,setLikeCount]=useState(0);
   const { slug } = useParams();
 
   const blog = blogs.find((b) => b.slug === slug);
@@ -12,14 +13,12 @@ const JournalDetail = () => {
 
   return (
     <div>
-      {/* <h1>{slug}</h1> */}
-      <h1>{blog.title}</h1>
-      
       <img src={blog.coverImage} alt="Cover" />
-      <p>{blog.excerpt}</p>
+      <h1>{blog.title}</h1>
       <div>{blog.content}</div>
       <p>By {blog.author} on {blog.date} — {blog.readTime}</p>
-      <button>Like</button>
+      <button onClick={()=>setLikeCount(likeCount+1)}>Like</button>
+      <p>{likeCount}</p>
       {/* <p>Tags: {blog.tags.join(', ')}</p>s */}
     </div>
   );
