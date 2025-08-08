@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import { useParams } from "react-router-dom";
 import blogs from "../../data/blogs";
+import "./JournalDetail.css"
 
 const JournalDetail = () => {
 
@@ -12,7 +13,7 @@ const JournalDetail = () => {
   if (!blog) return <p>Blog not found</p>; // avoid errors on invalid slugs
 
   return (
-    <div>
+    <div className="JournelDetailCardContainer">
       <img src={blog.coverImage} alt="Cover" />
       <h1>{blog.title}</h1>
       <div>{blog.content}</div>
