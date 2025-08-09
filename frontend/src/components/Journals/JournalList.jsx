@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import JournalCard from "./JournalCard";
 
 const JournalList = () => {

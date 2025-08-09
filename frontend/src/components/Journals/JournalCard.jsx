@@ -24,7 +24,7 @@ const JournalCard = () => {
           <div className="journalCard" key={index}>
           <img
             src={blog.coverImage ? `/${blog.coverImage}` : '/defaultCover.jpg'}
-            alt="Cover"
+            alt="card cover image"
             loading="lazy"
             className="cardCover"
           />

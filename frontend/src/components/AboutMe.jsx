@@ -12,8 +12,10 @@ const DeveloperInfo = () => {
         <div className="about-image-container">
           <img
             src="/2ndpic.jpeg"
-            alt="Siffat Ullah"
+            alt="profile pic"
             className="about-image"
+            title="intentionally rotated pic"
+
           />
           {/* <div className="footerLinks">
             <a href="https://github.com/siffatkhan" target="_blank" rel="noopener noreferrer">
